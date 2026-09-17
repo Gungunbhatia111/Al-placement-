@@ -1,0 +1,29 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+}
+
+.field__input {
+  border: 1px solid var(--color-paper-line);
+  border-bottom: 2px solid var(--color-navy);
+  border-radius: 1px;
+  padding: 10px 12px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  background-color: #fdfcf8;
+  color: var(--color-ink);
+  transition: border-color 0.15s ease;
+}
+
+.field__input:focus {
+  border-bottom-color: var(--color-brass);
+}

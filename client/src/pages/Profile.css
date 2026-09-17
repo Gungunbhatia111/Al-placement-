@@ -1,0 +1,385 @@
+/* Command Center Profile Styling */
+
+.command-profile-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.command-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.command-profile-eyebrow {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--accent-gold-soft);
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold-border);
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.command-profile-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-deep-navy);
+}
+
+.command-profile-sub {
+  font-size: 0.95rem;
+  color: var(--text-navy-subtle);
+  margin-top: 0.25rem;
+}
+
+.command-btn {
+  padding: 0.65rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.command-btn--primary {
+  background: var(--accent-gold);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.25);
+}
+
+.command-btn--primary:hover {
+  background: var(--accent-gold-hover);
+  transform: translateY(-1px);
+}
+
+.command-btn--ghost {
+  background: var(--card-bg);
+  border: 1px solid var(--border-beige);
+  color: var(--text-navy-muted);
+}
+
+.command-btn--ghost:hover {
+  background: var(--bg-ivory-soft);
+}
+
+.command-btn--secondary {
+  background: var(--text-deep-navy);
+  color: #ffffff;
+}
+
+.command-btn--secondary:hover {
+  background: var(--accent-navy-hover);
+}
+
+/* CARDS */
+.command-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-beige);
+  border-radius: var(--radius-card);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.command-hero-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAF9F5 100%);
+  flex-wrap: wrap;
+}
+
+.command-hero-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: var(--text-deep-navy);
+  color: var(--accent-gold);
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.15);
+}
+
+.command-hero-details {
+  flex: 1;
+  min-width: 240px;
+}
+
+.command-hero-details h2 {
+  font-size: 1.5rem;
+  color: var(--text-deep-navy);
+}
+
+.command-hero-tagline {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  margin-top: 0.15rem;
+}
+
+.command-hero-meta {
+  font-size: 0.85rem;
+  color: var(--text-navy-subtle);
+  margin-top: 0.35rem;
+}
+
+/* COMPLETENESS METER */
+.command-completeness-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-warm-ivory);
+  border: 1px solid var(--border-beige);
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+}
+
+.command-circle-meter {
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+
+.command-circle-svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.command-circle-bg {
+  fill: none;
+  stroke: var(--border-beige);
+  stroke-width: 3.8;
+}
+
+.command-circle-fill {
+  fill: none;
+  stroke: var(--accent-gold);
+  stroke-width: 3.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.8s ease-in-out;
+}
+
+.command-circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--text-deep-navy);
+}
+
+.command-completeness-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-deep-navy);
+}
+
+.command-completeness-sub {
+  font-size: 0.78rem;
+  color: var(--text-navy-subtle);
+  display: block;
+}
+
+.command-completeness-sub--done {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+/* EXTERNAL HUB */
+.command-card-head {
+  margin-bottom: 1rem;
+}
+
+.command-card-head h3 {
+  font-size: 1.15rem;
+}
+
+.command-card-sub {
+  font-size: 0.85rem;
+  color: var(--text-navy-subtle);
+  margin-top: 0.25rem;
+}
+
+.command-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.command-hub-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: all 0.15s ease;
+}
+
+.command-hub-card--active {
+  background: #ffffff;
+  border-color: var(--accent-gold-border);
+  box-shadow: 0 4px 10px rgba(217, 119, 6, 0.08);
+}
+
+.command-hub-icon {
+  font-size: 1.8rem;
+}
+
+.command-hub-content {
+  flex: 1;
+}
+
+.command-hub-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-deep-navy);
+}
+
+.command-hub-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  display: inline-block;
+  margin-top: 0.2rem;
+}
+
+.command-hub-empty {
+  font-size: 0.8rem;
+  color: var(--text-navy-subtle);
+  display: block;
+  margin-top: 0.2rem;
+}
+
+/* GRIDS & FIELDS */
+.command-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.command-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.command-field-group label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-navy-subtle);
+
+}
+
+.command-input {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-beige);
+  background: var(--card-bg);
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--text-deep-navy);
+}
+
+.command-input:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
+}
+
+.command-val-box {
+  padding: 0.6rem 0.85rem;
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-deep-navy);
+}
+
+.command-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-beige);
+  background: var(--card-bg);
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--text-deep-navy);
+  resize: vertical;
+}
+
+.command-bio-text {
+  font-size: 0.92rem;
+  color: var(--text-navy-muted);
+  line-height: 1.6;
+}
+
+/* TAGS */
+.command-tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.command-tag {
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.command-tag--gold {
+  background: var(--accent-gold-soft);
+  color: var(--accent-gold-hover);
+  border: 1px solid var(--accent-gold-border);
+}
+
+.command-tag--navy {
+  background: rgba(15, 23, 42, 0.06);
+  color: var(--text-deep-navy);
+  border: 1px solid var(--border-beige);
+}
+
+.command-tag button {
+  background: transparent;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.command-add-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.command-toast-message {
+  background: var(--color-success-bg);
+  border: 1px solid var(--color-success);
+  color: var(--color-success);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}

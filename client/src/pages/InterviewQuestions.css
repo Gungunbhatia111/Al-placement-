@@ -1,0 +1,297 @@
+/* Command Center Interview Practice Styling */
+
+.cmd-interview-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cmd-interview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cmd-toast-message {
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  color: var(--text-deep-navy);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.cmd-job-prep-banner {
+  background: linear-gradient(135deg, #0F3D39 0%, #072926 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-card);
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-md);
+}
+
+.cmd-job-prep-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.cmd-job-prep-sub {
+  font-size: 0.88rem;
+  color: #CBD5E1;
+  margin-top: 0.25rem;
+}
+
+.cmd-setup-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 1.5rem;
+}
+
+.cmd-form-space {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* QOTD CARD */
+.cmd-qotd-card {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAF9F5 100%);
+  border: 1px solid var(--border-beige);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cmd-qotd-badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  background: var(--bg-ivory-soft);
+  color: var(--text-deep-navy);
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  align-self: flex-start;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border-beige);
+}
+
+.cmd-qotd-topic {
+  font-size: 0.85rem;
+  color: var(--text-navy-subtle);
+  font-weight: 600;
+}
+
+.cmd-qotd-question {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-deep-navy);
+  line-height: 1.5;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.cmd-qotd-meta {
+  font-size: 0.82rem;
+  color: var(--text-navy-muted);
+}
+
+/* PRACTICE QUESTION CARDS */
+.cmd-session-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cmd-session-bar h2 {
+  font-size: 1.4rem;
+  color: var(--text-deep-navy);
+}
+
+.cmd-session-badge {
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+  background: var(--text-deep-navy);
+  color: #FFFFFF;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.cmd-q-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cmd-qcard {
+  background: var(--card-bg);
+  border: 1px solid var(--border-beige);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.cmd-qcard__head {
+  width: 100%;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  background: var(--card-bg-alt);
+  border-bottom: 1px solid var(--border-beige);
+  cursor: pointer;
+}
+
+.cmd-qcard__num {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--text-deep-navy);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cmd-qcard__title-wrap {
+  flex: 1;
+}
+
+.cmd-qcard__question {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-deep-navy);
+  display: block;
+}
+
+.cmd-qcard__chips {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+}
+
+.cmd-qchip {
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: var(--bg-warm-ivory);
+  border: 1px solid var(--border-beige);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-navy-subtle);
+}
+
+.cmd-qchip--diff {
+  background: var(--bg-ivory-soft);
+  color: var(--text-deep-navy);
+}
+
+.cmd-qcard__chevron {
+  font-size: 0.8rem;
+  color: var(--text-navy-subtle);
+}
+
+.cmd-qcard__body {
+  padding: 1.25rem;
+}
+
+.cmd-qhint {
+  font-size: 0.85rem;
+  color: var(--text-deep-navy);
+  margin-top: 0.75rem;
+}
+
+.cmd-answer-reveal {
+  margin-top: 0.85rem;
+}
+
+.cmd-btn-text {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-deep-navy);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cmd-suggested-box {
+  margin-top: 0.5rem;
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  padding: 0.85rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: var(--text-navy-muted);
+}
+
+.cmd-explanation {
+  margin-top: 0.4rem;
+  color: var(--text-deep-navy);
+}
+
+.cmd-session-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* FEEDBACK STAGE */
+.cmd-feedback-hero {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.cmd-fb-score-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--bg-ivory-soft);
+  border: 3px solid var(--text-deep-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.cmd-fb-val {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--text-deep-navy);
+}
+
+.cmd-fb-max {
+  font-size: 0.9rem;
+  color: var(--text-navy-subtle);
+}
+
+.cmd-fb-summary {
+  font-size: 1rem;
+  color: var(--text-navy-muted);
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.cmd-fb-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.cmd-fb-list li {
+  margin-bottom: 0.5rem;
+}
+
+.cmd-fb-list--good { color: var(--color-success); }
+.cmd-fb-list--warn { color: var(--text-deep-navy); }
+
+@media (max-width: 850px) {
+  .cmd-setup-grid {
+    grid-template-columns: 1fr;
+  }
+}

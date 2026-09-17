@@ -1,0 +1,429 @@
+/* Command Center Jobs Styling */
+
+.cmd-jobs-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cmd-jobs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cmd-jobs-stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.cmd-stat-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border-beige);
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.cmd-stat-val {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-deep-navy);
+  display: block;
+}
+
+.cmd-stat-lbl {
+  font-size: 0.78rem;
+  color: var(--text-navy-subtle);
+  font-weight: 600;
+}
+
+/* TOOLBAR */
+.cmd-toolbar-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-beige);
+  border-radius: var(--radius-card);
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-sm);
+}
+
+.cmd-search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-warm-ivory);
+  border: 1px solid var(--border-beige);
+  border-radius: 10px;
+  padding: 0.5rem 0.85rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.cmd-search-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--text-deep-navy);
+}
+
+.cmd-search-input:focus {
+  outline: none;
+}
+
+.cmd-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--text-navy-subtle);
+  font-weight: 600;
+}
+
+.cmd-filter-btn {
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: var(--bg-ivory-soft);
+  color: var(--text-navy-muted);
+  border: 1px solid var(--border-beige);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cmd-filter-btn--active {
+  background: var(--btn-teal-bg);
+  color: #ffffff;
+  border-color: var(--btn-teal-bg);
+}
+
+/* JOB CARDS GRID */
+.cmd-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.25rem;
+}
+
+.cmd-job-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-beige);
+  border-radius: var(--radius-card);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-sm);
+}
+
+.cmd-job-card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.cmd-job-card__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cmd-job-card__mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--text-deep-navy);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cmd-job-card__company {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-deep-navy);
+}
+
+.cmd-job-card__meta {
+  font-size: 0.8rem;
+  color: var(--text-navy-subtle);
+  display: block;
+}
+
+/* MATCH PILLS */
+.cmd-match-pill {
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cmd-match-pill--strong {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border: 1px solid rgba(5, 150, 105, 0.3);
+}
+
+.cmd-match-pill--warn {
+  background: var(--bg-ivory-soft);
+  color: var(--text-deep-navy);
+  border: 1px solid var(--border-beige);
+}
+
+.cmd-match-pill--danger {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
+.cmd-match-pill--neutral {
+  background: var(--bg-ivory-soft);
+  color: var(--text-navy-subtle);
+  border: 1px solid var(--border-beige);
+}
+
+.cmd-job-card__role {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-deep-navy);
+  margin-bottom: 0.5rem;
+}
+
+.cmd-job-card__summary {
+  font-size: 0.88rem;
+  color: var(--text-navy-muted);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.cmd-job-card__badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+
+.cmd-badge {
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-deep-navy);
+}
+
+.cmd-badge--deadline {
+  background: var(--bg-ivory-soft);
+  color: var(--text-deep-navy);
+  border-color: var(--border-beige);
+}
+
+.cmd-job-card__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.cmd-skill-chip {
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  background: rgba(15, 61, 57, 0.06);
+  border: 1px solid var(--border-beige);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-deep-navy);
+}
+
+.cmd-skill-chip--preferred {
+  background: var(--bg-ivory-soft);
+  color: var(--text-deep-navy);
+}
+
+.cmd-job-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.cmd-status-tag {
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  background: var(--text-deep-navy);
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+/* MODAL */
+.cmd-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.cmd-modal-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-beige);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 650px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow-lg);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.cmd-modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.cmd-modal-company {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-deep-navy);
+  text-transform: uppercase;
+}
+
+.cmd-modal-title {
+  font-size: 1.5rem;
+  color: var(--text-deep-navy);
+}
+
+.cmd-modal-close {
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cmd-modal-match-box {
+  background: var(--bg-warm-ivory);
+  border: 1px solid var(--border-beige);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.cmd-modal-match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.35rem;
+}
+
+.cmd-modal-match-val {
+  font-size: 0.95rem;
+  color: var(--text-deep-navy);
+}
+
+.cmd-modal-match-desc {
+  font-size: 0.85rem;
+  color: var(--text-navy-subtle);
+}
+
+.cmd-skill-gaps {
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+}
+
+.cmd-gap-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.cmd-gap-chip {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.cmd-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.88rem;
+  color: var(--text-navy-muted);
+  margin-bottom: 1rem;
+}
+
+.cmd-section-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-deep-navy);
+  margin: 0.85rem 0 0.4rem 0;
+}
+
+.cmd-pipeline-box {
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--border-beige);
+  padding-top: 1rem;
+}
+
+.cmd-pipeline-steps {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.cmd-pipeline-step {
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  color: var(--text-navy-muted);
+  cursor: pointer;
+}
+
+.cmd-pipeline-step--active {
+  background: var(--text-deep-navy);
+  color: #FFFFFF;
+  border-color: var(--text-deep-navy);
+}
+
+.cmd-modal-footer {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}

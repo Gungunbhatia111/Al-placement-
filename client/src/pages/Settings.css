@@ -1,0 +1,203 @@
+/* Command Center Settings & Preferences Styling */
+
+.cmd-settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.cmd-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cmd-toast-banner {
+  background: var(--color-success-bg);
+  border: 1px solid rgba(5, 150, 105, 0.3);
+  color: var(--color-success);
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  animation: slideInDown 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideInDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cmd-settings-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cmd-card-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.cmd-section-icon {
+  font-size: 1.75rem;
+}
+
+.cmd-card-sub {
+  font-size: 0.88rem;
+  color: var(--text-navy-subtle);
+  margin-top: 0.15rem;
+}
+
+/* 3-OPTION THEME SWITCHER GRID */
+.cmd-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.cmd-theme-option {
+  background: var(--bg-ivory-soft);
+  border: 2px solid var(--border-beige);
+  border-radius: 16px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cmd-theme-option:hover {
+  border-color: var(--btn-teal-bg);
+  transform: translateY(-2px);
+}
+
+.cmd-theme-option--active {
+  background: var(--card-bg);
+  border-color: var(--btn-teal-bg) !important;
+  box-shadow: 0 4px 14px rgba(15, 61, 57, 0.12);
+}
+
+body.dark .cmd-theme-option--active {
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.2);
+}
+
+.cmd-theme-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.cmd-theme-option strong {
+  font-size: 0.95rem;
+  color: var(--text-deep-navy);
+}
+
+.cmd-theme-desc {
+  font-size: 0.78rem;
+  color: var(--text-navy-subtle);
+  margin-top: 0.2rem;
+}
+
+.cmd-settings-divider {
+  height: 1px;
+  background: var(--border-beige);
+  margin: 0.5rem 0;
+}
+
+/* VISIBLE iOS TOGGLE SWITCHES */
+.cmd-settings-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cmd-setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  border-radius: 12px;
+  gap: 1.5rem;
+}
+
+.cmd-setting-info {
+  flex: 1;
+}
+
+.cmd-setting-label {
+  font-size: 0.95rem;
+  color: var(--text-deep-navy);
+  display: block;
+}
+
+.cmd-setting-desc {
+  font-size: 0.82rem;
+  color: var(--text-navy-subtle);
+  margin-top: 0.15rem;
+}
+
+/* iOS SWITCH PILL */
+.cmd-ios-switch {
+  width: 48px;
+  height: 26px;
+  border-radius: 9999px;
+  background: #CBD5E1;
+  padding: 3px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  flex-shrink: 0;
+}
+
+body.dark .cmd-ios-switch {
+  background: #475569;
+}
+
+.cmd-ios-switch--active {
+  background: var(--btn-teal-bg) !important;
+}
+
+.cmd-ios-thumb {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cmd-ios-switch--active .cmd-ios-thumb {
+  transform: translateX(22px);
+}
+
+/* DATA ACTIONS */
+.cmd-data-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.command-btn--danger {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+}
+
+.command-btn--danger:hover {
+  background: var(--color-danger);
+  color: #FFFFFF;
+}
+
+@media (max-width: 700px) {
+  .cmd-theme-grid {
+    grid-template-columns: 1fr;
+  }
+}

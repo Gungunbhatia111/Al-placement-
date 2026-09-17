@@ -1,0 +1,224 @@
+/* Command Center Dashboard Styling */
+
+.cmd-dash-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cmd-dash-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAF9F5 100%);
+  border: 1px solid var(--border-beige);
+  border-radius: var(--radius-card);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.cmd-dash-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-deep-navy);
+}
+
+.cmd-dash-sub {
+  font-size: 0.95rem;
+  color: var(--text-navy-subtle);
+  margin-top: 0.25rem;
+}
+
+/* READINESS CARD */
+.cmd-readiness-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background: var(--bg-warm-ivory);
+  border: 1px solid var(--border-beige);
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  max-width: 450px;
+}
+
+.cmd-readiness-circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--accent-gold-soft);
+  border: 3px solid var(--accent-gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cmd-readiness-num {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--text-deep-navy);
+  line-height: 1;
+}
+
+.cmd-readiness-lbl {
+  font-size: 0.7rem;
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+.cmd-readiness-title {
+  font-size: 1rem;
+  color: var(--text-deep-navy);
+}
+
+.cmd-readiness-disclaimer {
+  font-size: 0.78rem;
+  color: var(--text-navy-subtle);
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+/* NEXT STEP ACTION ENGINE */
+.cmd-next-step-card {
+  background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+  color: #FFFFFF;
+  border: none;
+}
+
+.cmd-next-badge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  background: var(--accent-gold);
+  color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.cmd-next-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cmd-next-title {
+  font-size: 1.3rem;
+  color: #0F3D39;;
+}
+
+.cmd-next-body {
+  font-size: 0.92rem;
+  color: #94A3B8;
+  margin-top: 0.25rem;
+}
+
+/* STAT TILES GRID */
+.cmd-dash-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.cmd-stat-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.cmd-tile-icon {
+  font-size: 1.5rem;
+}
+
+.cmd-tile-val {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-deep-navy);
+}
+
+.cmd-tile-lbl {
+  font-size: 0.82rem;
+  color: var(--text-navy-subtle);
+  font-weight: 600;
+}
+
+/* BREAKDOWN & WEAK AREAS */
+.cmd-breakdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.cmd-breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.cmd-breakdown-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--text-navy-muted);
+}
+
+.cmd-weak-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem 0;
+}
+
+.cmd-weak-chip {
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+  border: 1px solid var(--accent-gold-border);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.cmd-weak-cta-wrap {
+  margin-top: 1rem;
+}
+
+/* TOOLS GRID */
+.cmd-section-heading {
+  font-size: 1.3rem;
+  color: var(--text-deep-navy);
+}
+
+.cmd-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.cmd-tool-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cmd-tool-icon {
+  font-size: 2rem;
+}
+
+.cmd-tool-title {
+  font-size: 1.1rem;
+  color: var(--text-deep-navy);
+}
+
+.cmd-tool-desc {
+  font-size: 0.88rem;
+  color: var(--text-navy-subtle);
+  line-height: 1.5;
+  flex: 1;
+}

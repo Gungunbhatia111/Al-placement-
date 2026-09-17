@@ -1,0 +1,288 @@
+/* Command Center Split-Screen Authentication Styling */
+
+.cmd-auth-split {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bg-warm-ivory);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* LEFT DEEP NAVY PREVIEW PANEL */
+.cmd-auth-left {
+  width: 440px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  color: #FFFFFF;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cmd-auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.cmd-auth-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);
+}
+
+.cmd-auth-brand-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #F8FAFC;
+}
+
+.cmd-auth-brand-sub {
+  font-size: 0.75rem;
+  color: #94A3B8;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.cmd-auth-hero-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto 0;
+}
+
+.cmd-auth-ring-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.cmd-auth-ring {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(217, 119, 6, 0.15);
+  border: 3px solid #D97706;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cmd-auth-ring-val {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.cmd-auth-ring-text strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #F8FAFC;
+}
+
+.cmd-auth-ring-text span {
+  font-size: 0.78rem;
+  color: #94A3B8;
+}
+
+.cmd-auth-features-ticker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cmd-ticker-chip {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #E2E8F0;
+  font-weight: 500;
+}
+
+.cmd-auth-quote {
+  background: rgba(217, 119, 6, 0.1);
+  border-left: 3px solid #D97706;
+  padding: 1rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.cmd-auth-quote p {
+  font-size: 0.88rem;
+  color: #FEF3C7;
+  line-height: 1.5;
+  font-style: italic;
+  margin: 0 0 0.4rem 0;
+}
+
+.cmd-auth-quote span {
+  font-size: 0.75rem;
+  color: #94A3B8;
+  font-weight: 700;
+}
+
+/* RIGHT FORM PANEL */
+.cmd-auth-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  background: var(--bg-warm-ivory);
+}
+
+.cmd-auth-form-card {
+  width: 100%;
+  max-width: 480px;
+  background: #FFFFFF;
+  border: 1px solid var(--border-beige);
+  border-radius: 20px;
+  padding: 2.25rem;
+  box-shadow: var(--shadow-md);
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.cmd-auth-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-deep-navy);
+  margin-top: 0.25rem;
+}
+
+.cmd-auth-sub {
+  font-size: 0.88rem;
+  color: var(--text-navy-subtle);
+  margin-top: 0.25rem;
+}
+
+/* SOCIAL BUTTONS */
+.cmd-social-btns {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.cmd-social-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-deep-navy);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cmd-social-btn:hover {
+  background: #FFFFFF;
+  border-color: var(--accent-gold-border);
+  box-shadow: var(--shadow-sm);
+}
+
+/* INPUT LABELS & VALIDATION */
+.cmd-input-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-navy-subtle);
+  margin-bottom: 0.35rem;
+}
+
+.cmd-check-badge {
+  font-size: 0.75rem;
+  color: #059669;
+  font-weight: 700;
+}
+
+.command-input--valid {
+  border-color: #059669 !important;
+  background: #ECFDF5 !important;
+}
+
+/* TARGET ROLE CHIPS */
+.cmd-target-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.cmd-target-chip {
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-ivory-soft);
+  border: 1px solid var(--border-beige);
+  color: var(--text-navy-muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cmd-target-chip:hover,
+.cmd-target-chip--active {
+  background: var(--accent-gold);
+  color: #FFFFFF;
+  border-color: var(--accent-gold);
+}
+
+.cmd-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-top: 1rem;
+}
+
+.cmd-auth-submit {
+  width: 100%;
+  padding: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.cmd-auth-switch {
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--text-navy-subtle);
+  margin-top: 1.25rem;
+}
+
+.cmd-auth-switch a {
+  color: var(--accent-gold);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .cmd-auth-left {
+    display: none;
+  }
+}

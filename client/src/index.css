@@ -1,0 +1,226 @@
+/* Figma-Inspired Placement Cell AI Command Center - Global Design Tokens */
+:root {
+  /* Warm Ivory / Off-White palette from Figma */
+  --bg-warm-ivory: #FDFBF7;
+  --bg-ivory-soft: #F4F8F6;
+  --card-bg: #FFFFFF;
+  --card-bg-alt: #FAF9F5;
+  
+  /* Deep Forest Teal / Navy from Figma */
+  --text-deep-navy: #0F3D39;
+  --text-navy-dark: #0F172A;
+  --text-navy-muted: #334155;
+  --text-navy-subtle: #64748B;
+  
+  /* Primary Accent: Deep Forest Teal */
+  --accent-coral: #0F3D39;
+  --accent-teal: #0F3D39;
+  --accent-gold: #0F3D39;
+  --accent-gold-hover: #072926;
+  --accent-gold-soft: #E6F4F1;
+  --accent-gold-border: #B2DFDB;
+  
+  /* Pill Button Teal Primary */
+  --btn-teal-bg: #0F3D39;
+  --btn-teal-hover: #072926;
+  
+  /* Neutral Borders */
+  --border-beige: #E2E8F0;
+  --border-beige-dark: #CBD5E1;
+  
+  /* Status Colors */
+  --color-success: #059669;
+  --color-success-bg: #ECFDF5;
+  --color-warning: #0F3D39;
+  --color-warning-bg: #E6F4F1;
+  --color-danger: #DC2626;
+  --color-danger-bg: #FEF2F2;
+
+  /* Typography */
+  --font-display: "Outfit", "Fraunces", "Inter", -apple-system, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "Fira Code", "Courier New", monospace;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 3px rgba(15, 61, 57, 0.05);
+  --shadow-md: 0 6px 16px rgba(15, 61, 57, 0.08);
+  --shadow-lg: 0 12px 28px rgba(15, 61, 57, 0.12);
+  --radius-card: 20px;
+  --radius-pill: 9999px;
+}
+
+/* GLOBAL DARK MODE OVERRIDES */
+html.dark,
+body.dark {
+  --bg-warm-ivory: #0B1120;
+  --bg-ivory-soft: #0F172A;
+  --card-bg: #1E293B;
+  --card-bg-alt: #1E293B;
+  
+  --text-deep-navy: #F8FAFC;
+  --text-navy-dark: #F1F5F9;
+  --text-navy-muted: #E2E8F0;
+  --text-navy-subtle: #94A3B8;
+  
+  --border-beige: #334155;
+  --border-beige-dark: #475569;
+  
+  --btn-teal-bg: #38BDF8;
+  --btn-teal-hover: #0284C7;
+  
+  --accent-gold-soft: rgba(56, 189, 248, 0.15);
+  --accent-gold-border: rgba(56, 189, 248, 0.3);
+  
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-warm-ivory);
+  color: var(--text-navy-muted);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-deep-navy);
+  margin: 0;
+  font-weight: 700;
+}
+
+a {
+  color: var(--text-deep-navy);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--btn-teal-hover);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Figma Pill Button Classes */
+.btn-pill-teal {
+  background-color: var(--btn-teal-bg);
+  color: #FFFFFF !important;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(15, 61, 57, 0.2);
+}
+
+body.dark .btn-pill-teal {
+  color: #0F172A !important;
+  font-weight: 700;
+}
+
+.btn-pill-teal:hover {
+  background-color: var(--btn-teal-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(15, 61, 57, 0.3);
+}
+
+.btn-pill-outline {
+  background-color: transparent;
+  color: var(--text-deep-navy) !important;
+  border: 1.5px solid var(--text-deep-navy);
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn-pill-outline:hover {
+  background-color: var(--text-deep-navy);
+  color: #FFFFFF !important;
+  transform: translateY(-1px);
+}
+
+body.dark .btn-pill-outline:hover {
+  color: #0F172A !important;
+}
+
+/* Micro-Interaction: Hover Card Lift */
+.card-lift {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Skeleton Loading Animation */
+.skeleton-pulse {
+  background: linear-gradient(90deg, #F4F8F6 25%, #E2E8F0 50%, #F4F8F6 75%);
+  background-size: 200% 100%;
+  animation: skeletonLoading 1.5s infinite ease-in-out;
+  border-radius: 8px;
+}
+
+body.dark .skeleton-pulse {
+  background: linear-gradient(90deg, #1E293B 25%, #334155 50%, #1E293B 75%);
+}
+
+@keyframes skeletonLoading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-warm-ivory);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+body.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-deep-navy);
+}
+
+/* Focus State */
+:focus-visible {
+  outline: 2px solid var(--btn-teal-bg);
+  outline-offset: 2px;
+}

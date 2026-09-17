@@ -1,0 +1,52 @@
+.admit-card {
+  position: relative;
+  background-color: #fffdf8;
+  border: 1px solid var(--color-paper-line);
+  border-top: 6px solid var(--color-navy);
+  border-radius: var(--radius-card);
+  padding: 40px 36px 32px;
+  box-shadow: 0 1px 0 rgba(22, 35, 63, 0.04), 0 8px 24px rgba(22, 35, 63, 0.06);
+  max-width: 420px;
+  width: 100%;
+}
+
+.admit-card__seal {
+  position: absolute;
+  top: -20px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-brass);
+  color: var(--color-navy);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--color-paper);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.admit-card__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--color-maroon);
+  margin: 0 0 6px;
+  text-transform: uppercase;
+}
+
+.admit-card__title {
+  font-size: 28px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed var(--color-paper-line);
+}
+
+.admit-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
